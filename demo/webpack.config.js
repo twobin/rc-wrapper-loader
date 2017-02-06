@@ -1,6 +1,7 @@
 'use strict';
 
 var path = require('path');
+var fs = require('fs');
 var combineLoaders = require('webpack-combine-loaders');
 
 module.exports = {
@@ -27,7 +28,9 @@ module.exports = {
         loaders: ['babel', path.resolve(__dirname, '../')],
         include: [
           __dirname,
+          // path.resolve(__dirname, '../') + '/node_modules/@ali/remote-component',
         ],
+        // exclude: /node_modules/,
       },
     ],
   },

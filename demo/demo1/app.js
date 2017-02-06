@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-// import { CardScriptWrapper } from '@ali/remote-component';
+import { CardScriptWrapper } from '@ali/remote-component';
 
 class MyCard extends React.Component {
   render() {
@@ -13,5 +13,7 @@ class MyCard extends React.Component {
     );
   }
 }
+
+export default MyCard;
 
 // ReactDOM.render(<MyCard />, document.getElementById('app'));
