@@ -1,6 +1,6 @@
 {
   "name": "rc-wrapper-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "remote component wrapper loader",
   "main": "lib/index.js",
   "scripts": {

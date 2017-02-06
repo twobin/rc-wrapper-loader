@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { CardScriptWrapper } from '@ali/remote-component';
+// import { CardScriptWrapper } from '@ali/remote-component';
 
 class MyCard extends React.Component {
   render() {
