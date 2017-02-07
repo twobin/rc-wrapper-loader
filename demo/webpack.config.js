@@ -25,7 +25,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loaders: ['babel', path.resolve(__dirname, '../')],
+        loaders: ['babel', path.resolve(__dirname, '../') + '?cardType=render'],
         include: [
           __dirname,
           // path.resolve(__dirname, '../') + '/node_modules/@ali/remote-component',

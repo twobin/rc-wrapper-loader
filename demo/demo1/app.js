@@ -1,3 +1,4 @@
+window.__CARDTYPE__ = 'render';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 // import { CardScriptWrapper } from '@ali/remote-component';
