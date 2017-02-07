@@ -1,5 +1,5 @@
 import loaderUtils from 'loader-utils';
-import { CardScriptWrapper } from '@ali/remote-component';
+import { CardScriptWrapper, getCurrentScriptParams } from '@ali/remote-component';
 
 module.exports = function(code) {
   let cardName;
@@ -13,7 +13,7 @@ module.exports = function(code) {
     temp += "import { CardScriptWrapper } from '@ali/remote-component';";
     temp += code;
     temp += 'const NewCard = CardScriptWrapper()(' + cardName[1] + ');';
-    temp += "ReactDOM.render(<NewCard />, document.getElementById('app'));";
+    temp += "ReactDOM.render(<NewCard />, document.getElementById('onenessCard-' + getCurrentScriptParams('id')));";
   }
 
   return temp;
