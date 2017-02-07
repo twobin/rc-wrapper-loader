@@ -12,7 +12,7 @@ module.exports = function(code) {
     cardName = code.match(/export default (\S*);/);
   }
 
-  if (cardName && cardName[1] && cardType) {
+  if (cardName && cardName[1]) {
     if (cardType === 'component' || !cardType) {
       temp += "import { CardScriptWrapper } from '@ali/remote-component';";
       temp += code;
