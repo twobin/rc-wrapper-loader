@@ -9,7 +9,7 @@ module.exports = function(code) {
   let temp = '';
 
   if (code) {
-    cardName = code.match(/export default (\S*);/);
+    cardName = code.match(/export default (\S*);/) || code.match(/module.exports = (\S*);/);
   }
 
   if (cardName && cardName[1]) {
