@@ -1,6 +1,6 @@
 {
   "name": "rc-wrapper-loader",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "remote component wrapper loader",
   "main": "lib/index.js",
   "scripts": {
@@ -51,7 +51,7 @@
   "dependencies": {
     "loader-utils": "^0.2.15",
     "webpack": "^1.13.1",
-    "@ali/remote-component": "0.1.0-alpha-4"
+    "@ali/remote-component": "~0.1.1"
   },
   "files": [
     "src",
